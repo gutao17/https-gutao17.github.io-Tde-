@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Desmatamento e Aquecimento Global</title>
+    <link rel="shortcut icon" href="img/icone_mundo.png" type="image/x-icon">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,300;1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/cabecalho.css">
+    <link rel="stylesheet" href="css/secaoDestaque.css">
+    <link rel="stylesheet" href="css/secaoTemas.css">
+    <link rel="stylesheet" href="css/secaoRelacao.css">
+    <link rel="stylesheet" href="css/secaoContato.css">
+    <link rel="stylesheet" href="css/secaoQuemSomos.css">
+
+    <meta name="viewport" content="width=device-width">
+    
+</head>
+<body>
+    <div>
+        
+      <header class="header ">
+        <a href="#conteudo" class="logo">
+          <img src="img/icone_mundo.png" alt="logo Planeta Terra" width="50px" height="50px">
+        </a> 
+        <div class="hamburguer">
+          <input class="menu-btn" type="checkbox" id="menu-btn" />
+          <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+          <ol class="menu">
+            <li class="cabecalho-nav-item"><a class="cabecalho-nav-link" href="#conteudo">Início</a></li>
+            <li class="cabecalho-nav-item"><a class="cabecalho-nav-link" href="#temas">Temas</a></li>
+            <li class="cabecalho-nav-item"><a class="cabecalho-nav-link" href="#relacao">Relação</a></li>
+            <li class="cabecalho-nav-item"><a class="cabecalho-nav-link" href="#contato">Contato</a></li>
+            <li class="cabecalho-nav-item"><a class="cabecalho-nav-link" href="#quemsomos">Quem somos</a></li>
+          </ol>
+        </div>
+      </header>
+
+      <main class="conteudo" role="main" id="conteudo">
+        <section class="secaoDestaque">
+          <h1 class="secaoDestaque-titulo" role="document" tabindex="0" id="conteudoPrincipal">
+            AQUECIMENTO GLOBAL <br> E DESMATAMENTO
+          </h1>
+          <p class="secaoDestaque-texto" role="document" tabindex="0">
+            A relação entre o aquecimento global e o desmatamento florestal no Brasil, 
+            através da análise de gráficos e tabelas durante um período de anos. 
+            Demonstraremos as suas possíveis relações e a importância do reflorestamento e 
+            não desmatamento, não somente para a natureza quanto para a vida humana.
+          </p>
+        </section>
+
+        <section class="secaoTemas" id="temas">
+          <div class="container">
+            <ol class="temas">
+              <li class="temas-tema">
+                <h2 class="titulo-padrao temas-tema-titulo temas-tema-titulo--desmatamento">
+                  Desmatamento
+                </h2>
+                <p class="temas-tema-texto">
+                  O desmatamento refere-se à eliminação total ou parcial de qualquer 
+                  tipo de cobertura vegetal. Atualmente, é considerado um dos maiores 
+                  problemas ambientais.
+                </p>
+              </li>      
+              <li class="temas-tema">
+                <h2 class="titulo-padrao temas-tema-titulo temas-tema-titulo--queimadas">
+                  Aquecimento
+                </h2>
+                <p class="temas-tema-texto">
+                  O aquecimento global refere-se ao aumento anormal da temperatura média 
+                  do planeta registrado nas últimas décadas. Esse fenômeno é associado 
+                  principalmente às ações antrópicas.
+                </p>
+              </li>
+            </ol>
+            <img src="./img/aquecimento_global.jpg" alt width="100%">
+          </div>
+        </section>
+
+        <section class="secaoRelacao clearfix" id="relacao">
+          <div class="container">
+            <img src="./img/grafico_media_area_desmatada.jpeg" class="secaoRelacao-imgDestaque" alt>
+            <img src="./img/tabela_media_area_desmatada.jpeg" class="secaoRelacao-imgDestaque" alt>
+            <h2 class="secaoRelacao-titulo titulo-padrao">
+              RELAÇÃO
+            </h2>
+            <p class="secaoRelacao-texto">
+              Nossa teoria principal era que o desmatamento e o 
+              aquecimento andavam lado a lado.
+            </p>
+            <p class="secaoRelacao-texto">
+              Com os datasets que encontramos online, conseguimos comprovar nossa teoria
+              e utilizandoo o Pandas fizemos as comparaçõe em forma 
+              de gráfico em barra e tabelas.
+            </p>
+            <p class="secaoRelacao-texto"> 
+              Nas imagens ao lado notamos que os 
+              números aumentam juntos ao passar dos anos.
+              Há poucos anos para a comparação, pois é um exemplo 
+              de rápida percepção. 
+            </p>
+            <p class="secaoRelacao-texto">
+              A teoria inicial foi comprovada 
+              utilizando apenas 3 anos de comparação, quase 10 anos 
+              atrás e com números pequenos, nossa nova teoria é que 
+              esses números estão maiores hoje em dia e que podem ser 
+              alarmantes.
+            </p>
+          </div>
+        </section>
+
+        <section class="secaoContato" id="contato">
+          <div class="container">
+            <h2 class="secaoContato-titulo">
+              CONTATO
+            </h2>
+            <p class="secaoContato-comunicado">
+              Caso haja alguma pergunta, por favor nos envie!
+            </p>
+            <form>
+              <fieldset class="grupo">
+                <div class="campo">
+                  <label for="nome"><strong>Seu Nome:</strong></label>
+                  <input type="text" name="nome" id="nome" required placeholder="Pâmela">
+                </div>
+  
+                <div class="campo">
+                  <label for="email"><strong>Seu Email:</strong></label>
+                  <input type="email" name="email" id="email" required placeholder="contato@email.com">
+                </div>
+                <div class="campo">
+                  <br>
+                  <label for="duvida"><strong>Escreva sua dúvida ou comentário: </strong></label>
+                  <textarea class="textarea" rows="6" id="duvida" name="duvida" placeholder="Escreva aqui..."></textarea>
+                </div>
+              </fieldset> 
+              <button data-message="Botão para enviar sua pergunta ou comentário" class="botao" type="submit" onsubmit=>Enviar</button>
+            </form>
+          </div>
+        </section>
+      </main>
+
+      <footer>
+        <section class="secaoQuemSomos" id="quemsomos">
+          <div class="container">
+            <h2 class="secaoQuemSomos-titulo">
+              QUEM SOMOS
+            </h2>
+            <div class="secaoQuemSomos-apresentacao">
+              <a class="secaoQuemSomos-link" href="https://www.linkedin.com/in/augusto-jos%C3%A9-473323257/" alt="Linkedin do Augusto José">
+                <h3 class="secaoQuemSomos-apresentacao-titulo">Augusto</h3>
+                <span class="secaoQuemSomos-apresentacao-aluno ">
+                  <img class="secaoQuemSomos-apresentacao-img" src="./img/qrcode_augusto.png" alt="QR code para o Linkedin">
+                </span>
+                <ol class="secaoQuemSomos-apresentacao-itens">
+                  <li>Augusto Jose Costa da Silva</li>
+                  <li>Ciência da Computação</li>
+                </ol>
+              </a>
+            </div>
+
+            <div class="secaoQuemSomos-apresentacao">
+              <a class="secaoQuemSomos-link" href="https://www.linkedin.com/in/pamela-oliveira-dev/" alt="Linkedin da Pâmela">
+                <h3 class="secaoQuemSomos-apresentacao-titulo">Pâmela</h3>
+                <span class="secaoQuemSomos-apresentacao-aluno">
+                  <img class="secaoQuemSomos-apresentacao-img" src="./img/qrcode_pamela.png" alt="QR code para o Linkedin">
+                </span>
+                <ol class="secaoQuemSomos-apresentacao-itens">
+                  <li>Pâmela de Oliveria Souza</li>
+                  <li>Ciência da Computação</li>
+                </ol>
+              </a>
+            </div>
+
+            <div class="secaoQuemSomos-apresentacao">
+              <a class="secaoQuemSomos-link" href="https://www.linkedin.com/in/joao-pedro-maximo-da-silva/" alt="Linkedin do João Pedro">
+                <h3 class="secaoQuemSomos-apresentacao-titulo">João Pedro</h3>
+                <span class="secaoQuemSomos-apresentacao-aluno">
+                  <img class="secaoQuemSomos-apresentacao-img" src="./img/qrcode_joaopedro.png" alt="QR code para o Linkedin">
+                </span>
+                <ol class="secaoQuemSomos-apresentacao-itens">
+                  <li>João Pedro Máximo da Silva</li>
+                  <li>Ciência da Computação</li>
+                </ol>
+              </a>
+            </div>
+
+            <div class="secaoQuemSomos-apresentacao">
+              <a class="secaoQuemSomos-link" href="https://www.linkedin.com/in/j%C3%BAlio-avilla-diniz-642081222/" alt="Linkedin do Julio">
+                <h3 class="secaoQuemSomos-apresentacao-titulo">Julio</h3>
+                <span class="secaoQuemSomos-apresentacao-aluno">
+                  <img class="secaoQuemSomos-apresentacao-img" src="./img/qrcode_julio.png" alt="QR code para o Linkedin">
+                </span>
+                <ol class="secaoQuemSomos-apresentacao-itens">
+                  <li>Júlio Avilla Diniz</li>
+                  <li>Ciência da Computação</li>
+                </ol>
+              </a>
+            </div>
+
+            <div class="secaoQuemSomos-apresentacao">
+              <a class="secaoQuemSomos-link" href="https://www.linkedin.com/in/luanasilvacruz/" alt="Linkedin da Luana">
+                <h3 class="secaoQuemSomos-apresentacao-titulo">Luana</h3>
+                <span class="secaoQuemSomos-apresentacao-aluno">
+                  <img class="secaoQuemSomos-apresentacao-img" src="./img/qrcode_luana.png" alt="QR code para o Linkedin">
+                </span>
+                <ol class="secaoQuemSomos-apresentacao-itens">
+                  <li>Luana Silva Cruz</li>
+                  <li>Ciência da Computação</li>
+                </ol>
+              </a>
+            </div>
+
+            <div class="secaoQuemSomos-apresentacao">
+              <a class="secaoQuemSomos-link" href="https://www.linkedin.com/in/joao-augusto-oliveira-soares-9303b91b5/" alt="Linkedin do João Augusto">
+                <h3 class="secaoQuemSomos-apresentacao-titulo">João Augusto</h3>
+                <span class="secaoQuemSomos-apresentacao-aluno">
+                  <img class="secaoQuemSomos-apresentacao-img" src="./img/qrcode_joaoaugusto.png" alt="QR code para o Linkedin">
+                </span>
+                <ol class="secaoQuemSomos-apresentacao-itens">
+                  <li>João Augusto de Oliveira</li>
+                  <li>Ciência da Computação</li>
+                </ol>
+              </a>
+            </div>
+
+          </div> 
+        </section>
+      </footer>
+    </div>
+    
+  </body>
+</html>
